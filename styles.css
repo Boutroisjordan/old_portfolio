@@ -91,6 +91,6 @@ body {
     #check:checked ~ nav{
         left: 0;
         transition: .5s;
-        position: fixed;
+        position: relative;
     }
 }
