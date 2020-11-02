@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+* {
+    padding: 0;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Itim',serif,sans-serif;
+}
+
+
+
+header {
+    background-color: #F2E1C2;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo {
+    color: white;
+    padding: 0 100px;
+    text-transform: uppercase;
+    line-height: 80px;
+    font-size: 20px;
+}
+nav {
+    float: right;
+    padding-right: 20px;
+}
+nav a{
+    line-height: 80px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+    padding: 7px 13px;
+}
+
+nav a:active, nav a:hover {
+    color: #A67449;
+    transition: .5s;
+}
+body {
+    background: url(./img/wood.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.checkbtn{
+    font-size:30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    nav{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transform: all .5s;
+    }
+    nav a{
+        display: block;
+        height: 60px;
+    }
+    #check:checked ~ nav{
+        left: 0;
+        transition: .5s;
+    }
+}
