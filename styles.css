@@ -11,14 +11,18 @@
 
 header {
     background-color: white;
-    height: 80px;
+    height: 150px;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-label.logo img {
-    width: 170px;
-    padding: 0 20px;
-    line-height: 80px;
+
+
+.img {
+    width: 200px;
+    height: 150px;
 }
 nav {
     float: right;
@@ -29,13 +33,12 @@ nav a{
     color: #273678;
     text-transform: uppercase;
     text-decoration: none;
-    font-size: 20px;
-    display: inline-block;
-    padding: 7px 13px;
+    font-size: 40px;
+    padding: 10px;
 }
 
 nav a:active, nav a:hover {
-    color: black;
+    color: #c3c8e6;
     transition: .5s;
 }
 body {
@@ -59,7 +62,7 @@ body {
 }
 
 @media (max-width: 1080px){
-    label.logo img{
+    img{
         padding-left: 50px;
     }
     nav a {
@@ -71,7 +74,7 @@ body {
     .checkbtn{
         display: block;
     }
-    label.logo img {
+    img {
         width: 180px;
     }
     nav{
