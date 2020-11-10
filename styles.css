@@ -2,54 +2,55 @@
 
 * {
     padding: 0;
-    margin: 0%;
+    margin: 0;
     box-sizing: border-box;
-    font-family: 'Itim',serif,sans-serif;
+    font-family: 'Open Sans',serif,sans-serif;
 }
-
 
 
 header {
-    background-color: white;
-    height: 150px;
+    background-color: #273678;
+    height: 90px;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
-
-
 .img {
+    overflow: hidden;
     width: 200px;
-    height: 150px;
 }
+
+div.img img{
+    width: 190px;
+}
+
 nav {
     float: right;
     padding-right: 20px;
 }
 nav a{
     line-height: 80px;
-    color: #273678;
+    color: white;
     text-transform: uppercase;
     text-decoration: none;
-    font-size: 40px;
-    padding: 10px;
+    font-size: 20px;
+    display: inline-block;
+    padding: 7px 13px;
 }
 
 nav a:active, nav a:hover {
-    color: #c3c8e6;
+    color: blueviolet;
     transition: .5s;
 }
 body {
-    background-color: #273678;
-    background-size: cover;
-    height: 100vh;
+    background-color: white;
 }
 
 .checkbtn{
     font-size:30px;
-    color: #273678;
+    color: white;
     float: right;
     line-height: 80px;
     margin-right: 40px;
@@ -62,7 +63,8 @@ body {
 }
 
 @media (max-width: 1080px){
-    img{
+    label.logo{
+        font-size: 30px;
         padding-left: 50px;
     }
     nav a {
@@ -74,14 +76,11 @@ body {
     .checkbtn{
         display: block;
     }
-    img {
-        width: 180px;
-    }
     nav{
         position: fixed;
         width: 100%;
         height: 100vh;
-        background: white;
+        background: #273678;
         top: 80px;
         left: -100%;
         text-align: center;
@@ -99,23 +98,34 @@ body {
 
 /* main + grid */
 
-.wrapper {
+.cards {
+    margin: 0 auto;
+    max-width: 1000px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
-.one {
-    color: white;
-    font-size: 20px;
+.card {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
 }
 
-.two {
-    color: white;
-    font-size: 20px;
+.card__image {
+    display: block;
+    width: 100%;
 }
 
-.three {
-    color: white;
-    font-size: 20px;
+.card__content {
+    line-height: 1.5;
+    font-size: 0.9em;
+    padding: 15px;
+    background: #fafafa;
+}
+
+.card__content > p:first-of-type{
+    margin-top: 0;
+}
+
+.card__content > p:last-of-type{
+    margin-bottom: 0;
 }
