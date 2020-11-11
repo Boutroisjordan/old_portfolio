@@ -10,7 +10,7 @@
 
 header {
     background-color: #273678;
-    height: 90px;
+    height: 170px;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -19,23 +19,23 @@ header {
 
 .img {
     overflow: hidden;
-    width: 200px;
+    width: 300px;
 }
 
 div.img img{
-    width: 190px;
+    width: 300px;
 }
 
 nav {
     float: right;
-    padding-right: 20px;
+    padding-right: 10px;
 }
 nav a{
     line-height: 80px;
     color: white;
     text-transform: uppercase;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 30px;
     display: inline-block;
     padding: 7px 13px;
 }
@@ -96,14 +96,191 @@ body {
     }
 }
 
-/* main + grid */
+/* banner */
+
+.banner {
+    width: 100%;
+    height: 800px;
+    background-image: url(img/matt-sclarandis-S_IV6KqGeso-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.banner img {
+    width: 100%;
+    margin-top: -15%;
+    
+}
+
+.h1_banner{
+    width: 100%;
+    height: 400px;
+}
+
+.h1_banner h1 {
+    color: #273678;
+    text-align: center;
+    font-size: 3.5em;
+    padding-top: 5%;
+
+}
+
+.explore {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.explore h1 {
+    color: white;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    font-size: 3em;
+    font-weight: 200;
+}
+
+.explore i {
+    color: white;
+    font-size: 4em;
+    font-weight: 200;
+}
+/* logo +texte */
+.content {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.content_h1  {
+    width: 40%;
+}
+
+.content_logo {
+    width: 30%;
+}
+
+
+.content img{
+    width: 600px;
+}
+
+.content h1{
+    font-size: 4em;
+    font-weight: 700;
+    color: #273678;
+    width: 100%;
+    text-align: left;
+    padding-left: 70px;
+}
+
+/* grid home */
+.wrapper {
+    width: 100%;
+    height: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 40px;
+    max-width: 1700px;
+    padding: 40px 0;
+}
+
+.one {
+    width: 100%;
+    background-color: #273678;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.one h1 {
+    color: #ffffff;
+    font-size: 80px;
+    font-weight: 200;
+    padding-left: 30px;
+}
+
+.one h1 span {
+    font-weight: 700;
+    font-size: 100px;
+}
+
+.bloc_btn1 {
+    float: right;
+    padding-top: 50px;
+    padding-right: 50px;
+}
+
+.btn1 {
+    color: #273678;
+    background-color: white;
+    border: solid white 2px;
+    border-radius: 15px;
+    padding: 10px 10px;
+    font-size: 50px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.btn1:hover {
+    color: white;
+    background-color: #273678;
+}
+
+.two {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-image: url(img/teammate.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.two h1{
+    font-size: 80px;
+    text-align: right;
+    font-weight: 400;
+    padding-top: 830px;
+    padding-right: 50px;
+    color: white;
+}
+
+.two h1 span {
+    font-size: 120px;
+    font-weight: 700;
+}
+
+
+.three {
+    background-image: url(img/logo-NWS.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+
+/* main + grid  portfolio */
 
 .cards {
-    margin: 0 auto;
-    max-width: 1000px;
+    padding-left: 5%;
+    max-width: 1200px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    padding-top: 20px;
+    margin: 0 auto;
 }
 
 .card {
@@ -128,4 +305,35 @@ body {
 
 .card__content > p:last-of-type{
     margin-bottom: 0;
+}
+
+.card__info {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #eeeeee;
+    font-size: 0.8em;
+    border-bottom: 2px solid #cccccc;
+
+}
+
+
+/* footer */
+footer {
+    background-color: #273678;
+    width: 100%;
+    height: 200px;
+}
+
+.foot_text {
+    width: 100%;
+    height: 114px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.foot_text h1 {
+    font-size: 70px;
 }
