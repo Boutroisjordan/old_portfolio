@@ -143,7 +143,6 @@ nav a span {
     grid-column-start: 1;
     grid-column-end: 2;
     background-image: url(img/josh-appel-felKaq2MZC8-unsplash.jpg);
-
     background-size: cover;
     background-repeat: no-repeat;
 }
