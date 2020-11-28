@@ -17,6 +17,9 @@
     src: url(font/Casanova\ Font\ Free.ttf);
 }
 
+body {
+    
+}
 
 * {
     padding: 0;
@@ -24,6 +27,7 @@
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
+    outline-style: none;
 }
 
 /* header */
@@ -106,6 +110,84 @@ nav a span {
     width: 110%;
     height: 200px;
 }
+/* background */
+
+
+
+
+
+.title {
+    color: rgb(34, 33, 33);
+    font-family: "Poppins semi";
+
+}
+
+/* formulaire */
+.recrutement-form form {   
+    width: 500px; 
+}  
+.account-form-container form {   
+    width: 300px; 
+}  
+.reservation-form-container form {   
+    width: 400px; 
+} 
+.recrutement-form {   
+    flex-direction: column;   
+    justify-content: center;   
+    align-items: center;   
+    width: 100%;   
+    display: flex;   
+    margin: 0 auto; 
+}  
+
+input[type='date'] {   
+    font-size: 16px;   
+    letter-spacing: 2px; 
+}  
+.recrutement-form input {   
+font-family: 'Poppins reg', cursive, sans-serif;   
+text-align: center;   
+padding: 24px 0;   
+border: none;   
+width: 100%;   
+margin: 20px 0;   
+background: rgba(0, 0, 0, 0);   
+border: none;   
+border-bottom: 1px solid rgb(34, 33, 33);   
+color: rgb(34, 33, 33);   
+letter-spacing: 1.2px; 
+}  
+
+.recrutement-form ::placeholder {  
+     margin: 12px 0;   
+     color: rgb(34, 33, 33);   
+     font-size: 16px;   
+     letter-spacing: 2px;   
+     font-family: 'Poppins reg', cursive; }  
+     
+.recrutement-form button {   
+    letter-spacing: 0.8px;   
+    font-family: 'Poppins reg', cursive, sans-serif;   
+    cursor: pointer;   
+    opacity: 1;   
+    border: none;   
+    margin: 20px 0;   
+    height: 50px;   
+    padding: 10px;
+    background-color:rgb(34, 33, 33);
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 30px;
+}
+
+.recrutement-form button:hover {
+    background-color: white;
+    color: rgb(34, 33, 33); 
+    border: solid 2px rgb(34, 33, 33);
+}
+
 
 /* footer */
 
@@ -127,3 +209,6 @@ footer h1 {
 footer p {
     color: white;
 }
+
+
+
