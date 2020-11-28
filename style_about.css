@@ -24,6 +24,7 @@
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
+    outline-style: none;
 }
 
 /* header */
