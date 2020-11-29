@@ -127,7 +127,7 @@ nav a span {
 .card__image {
     display: block;
     width: 100%;
-    max-height: 200px;
+    max-height: 400px;
 }
 
 .card__content {
@@ -135,7 +135,7 @@ nav a span {
     font-size: 0.9em;
     padding: 15px;
     background:rgb(34, 33, 33);
-    height: 200px;
+    height: 210px;
 }
 
 .card__content p {
@@ -158,18 +158,18 @@ nav a span {
     justify-content: space-between;
     background-color:rgb(100, 95, 95);
     font-size: 0.8em;
-    border-bottom: 2px solid #cccccc;
-
 }
 
-.card__info div a {
+.card__link {
     font-family: "Poppins semi";
     color: white;
     font-size: 15px;
+    opacity: 0.6;
 }
 
-.card__info div a:hover, .card__info div a:active {
+.card__link:hover, .card__link:active {
     color: white;
+    opacity: 1;
 }
 
 .material-icons {
