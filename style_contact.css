@@ -112,10 +112,34 @@ nav a span {
 .title {
     color: rgb(34, 33, 33);
     font-family: "Poppins semi";
+}
 
+.flex {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* réseau */
+.reseaux {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.reseaux a {
+    padding: 10px 0;
+    font-family: "Poppins reg";
+    font-size: 2em;
+    color: rgb(34, 33, 33);
 }
 
 /* formulaire */
+
+
 .recrutement-form form {   
     width: 500px; 
 }  
@@ -129,9 +153,8 @@ nav a span {
     flex-direction: column;   
     justify-content: center;   
     align-items: center;   
-    width: 100%;   
+    width: 50%;   
     display: flex;   
-    margin: 0 auto; 
 }  
 
 input[type='date'] {   
