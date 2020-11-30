@@ -163,7 +163,7 @@ nav a span {
   
   .shop-img-container h1 {
     letter-spacing: 1.4px;
-    font-size: 40px;
+    font-size: 150px;
     font-family: 'Poppins reg', cursive, sans-serif;
     position: absolute;
     top: 50%;
@@ -430,6 +430,7 @@ footer p {
         top: 70%;
         left: 50%;
      }
+
 }
 
 
