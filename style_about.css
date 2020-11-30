@@ -27,6 +27,33 @@
     outline-style: none;
 }
 
+/* HOME START*/
+
+.background_home {
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/photo_header_resize.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo_home {
+    font-size: 25px;
+    overflow: hidden;
+    background-image: url(img/jordan_logo_blanc.png);
+    background-repeat: no-repeat;
+    background-size: 390px;
+    background-position: center;
+    width: 20%;
+    height: 114px;
+}
+
+.txt_home a{
+    color: white;
+}
+
+/* HOME END */
+
 /* HEADER ABOUT START */
  
 .background_about {
@@ -45,6 +72,7 @@ position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 30px 50px;
 }
 
 
@@ -81,9 +109,7 @@ nav a span {
     border-bottom: solid white;
 }
 
-/* About */
-
-
+/* ABOUT START */
 
 .about_h1{
     position: absolute;
@@ -99,34 +125,7 @@ nav a span {
 }
 
 
-@media screen and (max-width: 900px) {
-    .navigation {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px;
-    }
 
-    .navigation ul {
-        padding-top: 20px;
-    }
-
-    .navigation ul li a{
-        display: block;   
-     }
-
-     .logo {
-         width: 60%;
-     }
-
-     .about_h1  {
-        font-size: 60px ;
-        border-right: 5px solid white;
-        padding: 0 20px;
-        transform: translate(-50%,-50%);
-        top: 70%;
-        left: 50%;
-     }
-}
 
 /* HEADER ABOUT END */
 
@@ -194,7 +193,153 @@ nav a span {
   }
   
   /* boutique img media queries */
-  @media screen and (max-width: 900px) {
+  
+  /* END SHOP-GRID FIN BOUTIQUE */
+  /* ABOUT END */
+
+  /* PORTFOLIO START */
+
+.background_portfolio {
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/portfolio.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* GRID PORTFOLIO START*/
+
+.cards {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+
+.card {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.card__image {
+    display: block;
+    width: 100%;
+    max-height: 400px;
+}
+
+.card__content {
+    line-height: 2;
+    font-size: 0.9em;
+    padding: 15px;
+    background:rgb(34, 33, 33);
+    height: 210px;
+}
+
+.card__content p {
+    font-family: "Poppins reg";
+    font-size: 15px;
+    color: white;
+}
+
+.card__content > p:first-of-type{
+    margin-top: 0;
+}
+
+.card__content > p:last-of-type{
+    margin-bottom: 0;
+}
+
+.card__info {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color:rgb(100, 95, 95);
+    font-size: 0.8em;
+}
+
+.card__link {
+    font-family: "Poppins semi";
+    color: white;
+    font-size: 15px;
+    opacity: 0.6;
+}
+
+.card__link:hover, .card__link:active {
+    color: white;
+    opacity: 1;
+}
+
+.material-icons {
+    color: white;
+    opacity: 0.7;
+}
+
+.material-icons:hover {
+    color: white;
+    opacity: 1;
+    cursor: pointer;
+}
+/* GRID PORTFOLIO END */
+
+/* FOOTER  START*/
+
+footer {
+    width: 100%;
+    height: 13vh;
+    background-color: rgb(34, 33, 33);
+    font-family: "Poppins bld";
+    text-align: center;
+    padding-top: 1%;
+}
+
+footer h1 {
+    color: white;
+    font-size: 2.5em;
+    
+}
+
+footer p {
+    color: white;
+}
+
+
+/* FOOTER  END*/
+
+
+/* MEDIAQUERIES */
+
+@media screen and (max-width: 900px) {
+    .navigation {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .navigation ul {
+        padding-top: 20px;
+    }
+
+    .navigation ul li a{
+        display: block;   
+     }
+
+     .logo, .logo_home {
+         width: 60%;
+     }
+
+
+     .about_h1  {
+        font-size: 60px ;
+        border-right: 5px solid white;
+        padding: 0 20px;
+        transform: translate(-50%,-50%);
+        top: 70%;
+        left: 50%;
+     }
+}
+
+
+@media screen and (max-width: 900px) {
     .shop-main-img {
       margin: 20px;
       gap: 0;
@@ -226,30 +371,12 @@ nav a span {
     .title-shop h1 {
       font-size: 28px;
     }
+
+    .cards {
+        max-width: 1200px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 20px 0;
+        margin: 0 auto;
+    }
   }
-  /* END SHOP-GRID FIN BOUTIQUE */
-  
-
-/* FOOTER  START*/
-
-footer {
-    width: 100%;
-    height: 13vh;
-    background-color: rgb(34, 33, 33);
-    font-family: "Poppins bld";
-    text-align: center;
-    padding-top: 1%;
-}
-
-footer h1 {
-    color: white;
-    font-size: 2.5em;
-    
-}
-
-footer p {
-    color: white;
-}
-
-
-/* FOOTER  END*/
