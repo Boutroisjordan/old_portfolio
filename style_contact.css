@@ -120,6 +120,7 @@ nav a span {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    padding: 15px 0;
 }
 
 /* réseau */
@@ -128,13 +129,15 @@ nav a span {
     display: flex;
     flex-direction: column;
     text-align: center;
+    border-right: 2px solid rgb(34, 33, 33);
 }
 
 .reseaux a {
-    padding: 10px 0;
+    padding: 20px 0;
     font-family: "Poppins reg";
     font-size: 2em;
     color: rgb(34, 33, 33);
+    
 }
 
 /* formulaire */
