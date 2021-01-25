@@ -433,8 +433,38 @@ footer p {
 
 }
 
+ /* 700 px */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 700px) {
+    .about_h1 {
+      font-size: 50px;
+      transform: (-50%, -50%);
+      top: 85%;
+    }
+    .logo, .logo_home {
+      background-size: 300px;
+    }
+    .background_about {
+      background-position: right ;
+    }
+    .background_portfolio {
+      background-position: center;
+    }
+    .background_contact {
+      background-position: right;
+    }
+    footer h1 {
+      font-size: 1.5em;
+    }
+    footer p{
+      font-size: 1em;
+    }
+    .contact h1 {
+      font-size: 50px;
+    }
+    .shop-img-container h1 {
+      font-size: 40px;
+    }
     .shop-main-img {
       margin: 20px;
       gap: 0;
@@ -457,12 +487,6 @@ footer p {
       position: relative;
       overflow: hidden;
     }
-  
-    .text-shop-container {
-      font-size: 12px;
-      padding-bottom: 30px;
-    }
-  
     .title-shop h1 {
       font-size: 28px;
     }
@@ -484,20 +508,69 @@ footer p {
       align-items: center;
       padding: 15px 0;
   }
-  .reseaux {
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    border-top: 2px solid rgb(34, 33, 33);
-    border-left: none;
-    padding-top: 40px;
-  }
-
-  .background_contact {
-    background-position: right;
-  }
 
 }
 
 
+@media screen and (max-width: 900px) {
+  .shop-main-img {
+    margin: 20px;
+    gap: 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .shop-main-img-jordan {
+    margin: 20px;
+    gap: 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-flow: dense;
+  }
+  .shop-main-img h1 {
+    font-size: 32px;
+  }
+
+  .shop-img-container {
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .text-shop-container {
+    font-size: 10px;
+    padding-bottom: 40px;
+  }
+
+  .title-shop h1 {
+    font-size: 28px;
+  }
+
+  /* grid portfolio */
+
+  .portfolio-main-img {
+      max-width: 400px;
+      gap: 5px;
+  }
+
+
+
+  .flex {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0;
+}
+.reseaux {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-top: 2px solid rgb(34, 33, 33);
+  border-left: none;
+  padding-top: 40px;
+}
+
+
+}
